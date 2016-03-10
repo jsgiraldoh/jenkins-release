@@ -7,7 +7,7 @@ ENV HOME $JENKINS_HOME
 
 USER root
 RUN apt-get update \
- && apt-get install -y \
+ && apt-get install -y --no-install-recommends \
     graphviz \
     npm \
  && rm -rf /var/lib/apt/lists/*
