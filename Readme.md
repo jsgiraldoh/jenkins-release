@@ -40,13 +40,42 @@ your non-related EEA projects.
 
 And now you have a running Jenkins at http://localhost:8080
 
-See [EEA Jenkins master-slave orchestration](https://github.com/eea/eea.docker.jenkins) for a complete guide on running a Jenkins master-slave stack.  
+## Advanced usage
+
+Start Jenkins with SSL support:
+
+Create a self-signed test SSL certificate.
+
+    $ keytool -genkey -keyalg RSA -alias selfsigned -keystore /etc/keystore.jks -storepass ToPSecRet321 -dname "cn=localhost"
+
+Launch Jenkins
+
+    $ docker run -p 8080:8080 \
+                 -v /etc/keystore.jks:/etc/keystore.jks \
+             eeacms/jenkins-master \
+                 --httpPort=-1 \
+                 --httpsPort=8080 \
+                 --httpsKeyStore=/etc/keystore.jks \
+                 --httpsKeyStorePassword=ToPSecRet321
+
+or via environment variables:
+
+    $ docker run -p 8080:8080 \
+                 -v /etc/keystore.jks:/etc/keystore.jks \
+                 -e JENKINS_OPTS="--httpPort=-1 --httpsPort=8080 --httpsKeyStore=/etc/keystore.jks --httpsKeyStorePassword=ToPSecRet321" \
+             eeacms/jenkins-master
+
+See `--help` for more options:
+
+    $ docker run eeacms/jenkins-master --help
+
+See also [EEA Jenkins master-slave orchestration](https://github.com/eea/eea.docker.jenkins) for a complete guide on running a Jenkins master-slave stack.
 
 
 ## Supported environment variables
 
 * `JAVA_OPTS` You might need to customize the JVM running Jenkins master, typically to pass system properties or tweak heap memory settings. Use JAVA_OPTS environment variable for this purpose.
-
+* `JENKINS_OPTS` Start Jenkins with custom options. Useful if you want to start Jenkins on `https` for example.
 
 ## Copyright and license
 
