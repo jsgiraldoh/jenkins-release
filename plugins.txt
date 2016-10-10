@@ -55,6 +55,7 @@ speaks:0.1.1
 dropdown-viewstabbar-plugin:1.7
 script-security:1.17
 next-executions:1.0.11
+nodelabelparameter:1.7.2
 external-monitor-job:1.4
 cobertura:1.9.7
 analysis-core:1.76
