@@ -1,14 +1,12 @@
-FROM jenkins
-MAINTAINER "EEA: IDM2 A-Team" <eea-edw-a-team-alerts@googlegroups.com>
+FROM jenkins:2.60.1
 
 COPY plugins.txt /usr/share/jenkins/plugins.txt
 RUN /usr/local/bin/plugins.sh /usr/share/jenkins/plugins.txt
 ENV HOME $JENKINS_HOME
 
 USER root
-RUN apt-get update \
- && apt-get install -y --no-install-recommends \
-    graphviz \
-    npm \
+RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
+ && apt-get update \
+ && apt-get install -y --no-install-recommends graphviz nodejs \
  && rm -rf /var/lib/apt/lists/*
-USER jenkins
+USER ${user}
