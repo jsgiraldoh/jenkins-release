@@ -1,7 +1,7 @@
 instant-messaging:1.35
 pmd:3.49
 project-stats-plugin:0.4
-github-branch-source:2.2.1
+github-branch-source:2.2.2
 workflow-multibranch:2.16
 iphoneview:0.2
 maven-plugin:2.17
