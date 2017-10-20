@@ -10,6 +10,7 @@ your non-related EEA projects.
 
 - [`:latest` (*Dockerfile*)](https://github.com/eea/eea.docker.jenkins.master/blob/master/Dockerfile) (default)
 - [`:2.60.1` (*Dockerfile*)](https://github.com/eea/eea.docker.jenkins.master/blob/2.60.1/Dockerfile)
+- [`:2.73.2` (*Dockerfile*)](https://github.com/eea/eea.docker.jenkins.master/blob/2.73.2/Dockerfile)
 
 See [older versions](https://github.com/eea/eea.docker.jenkins.master/releases)
 
