@@ -35,6 +35,23 @@ See [older versions](https://github.com/eea/eea.docker.jenkins.master/releases)
 2. Install [Docker Compose](https://docs.docker.com/compose/).
 
 
+## Create new image based on production container
+
+### Update Dockerfile
+
+Update Dockerfile - set latest version or the version that can be seen on the HTML interface in the right down corner ( ex. Jenkins ver. 2.89.4 )
+
+### Update plugins.txt
+
+In Jenkins interface, go to Manage, then ThinBackup. Click Backup Now. Enter in shell on the container, in `/var/jenkins_home/backup/jenkins` ( directory is set in thinBackup Configuration) , extract and copy the contents of the installedPlugins.xml file to the Dockerfile location.
+
+Run:
+    $python plugins.py
+
+This will generate plugins.txt file.
+
+
+
 ## Usage
 
     $ docker run -p 8080:8080 eeacms/jenkins-master
