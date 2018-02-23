@@ -9,7 +9,7 @@ your non-related EEA projects.
 ## Supported tags and respective Dockerfile links
 
 - [`:latest` (*Dockerfile*)](https://github.com/eea/eea.docker.jenkins.master/blob/master/Dockerfile) (default)
-- [`:2.89.3` (*Dockerfile*)](https://github.com/eea/eea.docker.jenkins.master/blob/2.89.3/Dockerfile)
+- [`:2.89.4` (*Dockerfile*)](https://github.com/eea/eea.docker.jenkins.master/blob/2.89.4/Dockerfile)
 
 See [older versions](https://github.com/eea/eea.docker.jenkins.master/releases)
 
@@ -45,8 +45,15 @@ Update Dockerfile - set latest version or the version that can be seen on the HT
 
 In Jenkins interface, go to Manage, then ThinBackup. Click Backup Now. Enter in shell on the container, in `/var/jenkins_home/backup/jenkins` ( directory is set in thinBackup Configuration) , extract and copy the contents of the installedPlugins.xml file to the Dockerfile location.
 
+Using Rancher-cli:
+    
+    $ rancher exec jenkins-master/master bash
+    $ cd /var/jenkins_home/backup/jenkins/FULL-<<DATE>>
+    $ cat installedPlugins.xml
+
 Run:
-    $python plugins.py
+
+    $ python plugins.py
 
 This will generate plugins.txt file.
 
