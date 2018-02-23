@@ -1,6 +1,12 @@
 # Changelog
 
-## 2.89.23 (2018-01-18)
+
+## 2.89.4 (2018-02-23)
+
+- Upgrade to Jenkins 2.89.4
+- Use install-plugins.sh to install plugins.
+
+## 2.89.3 (2018-01-18)
 
 - Upgrade to Jenkins 2.89.3
 
