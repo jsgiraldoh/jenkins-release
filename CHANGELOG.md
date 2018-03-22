@@ -1,6 +1,11 @@
 # Changelog
 
 
+## 2.107.1 (2018-03-22)
+
+- Upgrade to Jenkins 2.107.1
+
+
 ## 2.89.4 (2018-02-23)
 
 - Upgrade to Jenkins 2.89.4
