@@ -12,7 +12,7 @@ def main():
         plugins.append('%s:%s\n' % (plugin.text, version.text))
 
     with open('plugins.txt', 'w') as ofile:
-        ofile.writelines(plugins)
+        ofile.writelines(sorted(plugins))
 
 if __name__ == '__main__':
     main()
