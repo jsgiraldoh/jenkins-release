@@ -8,7 +8,6 @@ email-ext:2.62
 github:1.29.0
 windows-slaves:1.3.1
 Matrix-sorter-plugin:1.3
-violations:0.7.11
 blueocean-personalization:1.5.0
 monitoring:1.72.0
 findbugs:4.72
@@ -124,14 +123,12 @@ blueocean-rest:1.5.0
 pipeline-stage-view:2.10
 pipeline-model-definition:1.2.9
 ace-editor:1.1
-analysis-collector:1.52
 icon-shim:2.0.3
 workflow-durable-task-step:2.19
 collapsing-console-sections:1.7.0
 doclinks:0.6.1
 jsch:0.1.54.2
 github-api:1.90
-seleniumhq:0.4
 matrix-reloaded:1.1.3
 scm-sync-configuration:0.0.10
 avatar:1.2
@@ -177,7 +174,6 @@ pipeline-graph-analysis:1.6
 BlameSubversion:1.200
 disk-usage:0.28
 ant:1.8
-warnings:4.66
 blueocean-bitbucket-pipeline:1.5.0
 blueocean:1.5.0
 PrioritySorter:3.6.0
