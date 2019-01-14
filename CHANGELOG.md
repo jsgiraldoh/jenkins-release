@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.150.1.1 (2019-01-14)
+
+- Upgrade plugins
+- Add Jacoco plugin.
+
 ## 2.150.1 (2018-12-06)
 
 - Upgrade to Jenkins 2.150.1
