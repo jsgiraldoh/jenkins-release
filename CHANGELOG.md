@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.150.2 (2019-01-21)
+
+- Upgrade to Jenkins 2.150.2
+
 ## 2.150.1.1 (2019-01-14)
 
 - Upgrade plugins
