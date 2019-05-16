@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.164.3 (2019-05-16)
+
+- Upgrade to Jenkins 2.164.3
+
 ## 2.164.2 (2019-04-15)
 
 - Upgrade to Jenkins 2.164.2
