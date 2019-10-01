@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.176.4 (2019-09-01)
+
+- Upgrade to Jenkins 2.176.4
+
 ## 2.176.3 (2019-08-30)
 
 - Upgrade to Jenkins 2.176.3
