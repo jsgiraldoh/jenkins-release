@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.204.2 (2020-01-31)
+
+- Upgrade to Jenkins 2.204.2
+
 ## 2.204.1 (2020-01-10)
 
 - Upgrade to Jenkins 2.204.1
