@@ -5,7 +5,7 @@ ace-editor:1.1
 all-changes:1.5
 analysis-collector:2.0.0
 analysis-core:1.96
-analysis-model-api:8.0.0
+analysis-model-api:8.0.1
 ant:1.11
 antisamy-markup-formatter:1.8
 apache-httpcomponents-client-4-api:4.5.10-2.0
@@ -80,9 +80,9 @@ findbugs:5.0.0
 flashlog-plugin:1.0
 font-awesome-api:5.12.0-7
 forensics-api:0.7.0
-git-client:3.1.1
+git-client:3.2.0
 git-server:1.9
-git:4.1.1
+git:4.2.0
 github-api:1.106
 github-branch-source:2.6.0
 github-issues:1.2.4
@@ -151,7 +151,7 @@ pipeline-stage-tags-metadata:1.5.1
 pipeline-stage-view:2.13
 plain-credentials:1.7
 plot:2.1.4
-plugin-util-api:1.0.1
+plugin-util-api:1.0.2
 pmd:4.0.0
 popper-api:1.16.0-6
 progress-bar-column-plugin:1.0
@@ -180,8 +180,8 @@ subversion:2.13.1
 swarm:3.18
 tasks:4.53
 thinBackup:1.9
-timestamper:1.11
-token-macro:2.11
+timestamper:1.11.1
+token-macro:2.12
 trac:1.13
 translation:1.16
 trilead-api:1.0.5
