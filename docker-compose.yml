@@ -1,0 +1,12 @@
+version: "3.4"
+services:
+  jenkins:
+    image: registry.colpatria.com/base/jenkins:2.235.3
+    ports:
+      - 8090:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - "./jenkins_home:/var/jenkins_home"
+      - "./keystore.jks:/etc/keystore.jks"
+    environment:
+      - JENKINS_OPTS=--httpPort=-1 --httpsPort=8080 --httpsKeyStore=/etc/keystore.jks --httpsKeyStorePassword=DevOps*2020

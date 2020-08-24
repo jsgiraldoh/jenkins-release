@@ -1,1 +1,3 @@
 installedPlugins.xml
+jenkins_home/
+*.jks
