@@ -1,7 +1,7 @@
 version: "3.4"
 services:
   jenkins:
-    image: registry.colpatria.com/base/jenkins:2.235.5
+    image: registry.colpatria.com/base/jenkins:2.235.5-sqlplus
     ports:
       - 8090:8080
     volumes:

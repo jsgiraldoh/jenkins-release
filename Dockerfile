@@ -3,6 +3,9 @@ FROM jenkins/jenkins:2.235.5
 ARG EXTRA_PATH
 
 ENV EXTRA_PATH=${EXTRA_PATH:-/usr/local/extra}
+ENV ORACLE_HOME=${EXTRA_PATH}/oracle/instantclient_19_8
+ENV LD_LIBRARY_PATH="$ORACLE_HOME"
+ENV PATH="$ORACLE_HOME:$PATH"
 
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh  < /usr/share/jenkins/ref/plugins.txt
