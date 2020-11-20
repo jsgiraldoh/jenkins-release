@@ -39,4 +39,3 @@ sonar:2.11
 ssh-agent:1.20
 ssh-credentials:1.18.1
 ssh-slaves:1.31.2
-warnings:5.0.1
