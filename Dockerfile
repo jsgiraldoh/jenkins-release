@@ -5,7 +5,8 @@ ARG EXTRA_PATH
 ENV EXTRA_PATH=${EXTRA_PATH:-/usr/local/extra}
 ENV ORACLE_HOME=${EXTRA_PATH}/oracle/instantclient_19_8
 ENV LD_LIBRARY_PATH="$ORACLE_HOME"
-ENV PATH="$ORACLE_HOME:$PATH"
+ENV MSSQL_BIN=/opt/mssql-tools/bin  
+ENV PATH="$MSSQL_BIN:$ORACLE_HOME:$PATH"
 
 COPY plugins.txt /usr/share/jenkins/ref/plugins.txt
 RUN /usr/local/bin/install-plugins.sh  < /usr/share/jenkins/ref/plugins.txt
@@ -21,4 +22,9 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
     && apt-get update \
     && apt-get install -y --no-install-recommends graphviz nodejs ansible libaio1 libaio-dev \
     && rm -rf /var/lib/apt/lists/*
+
+RUN curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | tee /etc/apt/sources.list.d/msprod.list
+RUN apt-get update
+RUN ACCEPT_EULA=Y apt-get install -y --no-install-recommends --allow-unauthenticated mssql-tools unixodbc-dev
+
 USER jenkins
