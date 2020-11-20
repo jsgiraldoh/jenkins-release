@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.235.5
+FROM jenkins/jenkins:2.267
 
 ARG EXTRA_PATH
 
