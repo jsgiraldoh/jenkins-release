@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.267
+FROM jenkins/jenkins:2.270
 
 ARG EXTRA_PATH
 
@@ -26,5 +26,11 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash - \
 RUN curl https://packages.microsoft.com/config/ubuntu/16.04/prod.list | tee /etc/apt/sources.list.d/msprod.list
 RUN apt-get update
 RUN ACCEPT_EULA=Y apt-get install -y --no-install-recommends --allow-unauthenticated mssql-tools unixodbc-dev
+
+RUN apt install -y python-pip \
+	&& apt install -y python3-pip \
+	&& pip install mssql-scripter \
+	&& apt-get install libicu57
+
 
 USER jenkins
