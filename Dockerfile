@@ -32,5 +32,7 @@ RUN apt install -y python-pip \
 	&& pip install mssql-scripter \
 	&& apt-get install libicu57
 
+RUN apt-get update \
+	&& apt-get install gettext-base
 
 USER jenkins
