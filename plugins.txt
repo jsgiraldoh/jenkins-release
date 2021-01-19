@@ -44,3 +44,5 @@ Office-365-Connector:4.13.2
 thinBackup:1.10
 artifactory:3.10.3
 pipeline-utility-steps:2.6.1
+extended-choice-parameter:0.82
+extended-read-permission:3.2
