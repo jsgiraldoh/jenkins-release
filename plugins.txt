@@ -47,3 +47,5 @@ pipeline-utility-steps:2.6.1
 extended-choice-parameter:0.82
 extended-read-permission:3.2
 copyartifact:1.45.3
+build-user-vars-plugin:1.6
+build-with-parameters:1.5
