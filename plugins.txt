@@ -50,3 +50,4 @@ copyartifact:1.45.3
 build-user-vars-plugin:1.6
 build-with-parameters:1.5
 postbuildscript:2.11.0
+fortify:20.2.34
