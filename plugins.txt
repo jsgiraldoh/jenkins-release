@@ -2,7 +2,7 @@ blueocean:1.24.7
 credentials:2.4.1
 git-client:3.7.1
 git:4.7.1
-instant-messaging:	1.42
+instant-messaging:1.42
 ldap:2.7
 maven-deployment-linker:1.5.1
 maven-info:0.3.0
