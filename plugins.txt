@@ -35,7 +35,7 @@ show-build-parameters:1.0
 sidebar-link:1.11.0
 sonar:2.13
 ssh-agent:1.22
-ssh-credentials:1.18.2
+ssh-credentials:1.18.1
 ssh-slaves:1.31.7
 bitbucket:1.1.29
 jira-trigger:1.0.1
